@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- The meta tag indicates metadata information that won't typically be visible to the viewer
+    unless they view the source code in their browser.
+    Meta elements or tags provide descriptive information about the webpage.
+    Ex: they help search engines process which information in your webpages to return in search results. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The character set (charset) for UTF-8 may seem insignificant, but is crucial for
+    establishing how computers interpret characters. If the metadata for the character set is 
+    missing, that can lead to compromised security. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Simple Website</title>
+</head>
+<body class="dark-theme">
+    <h1>Task List</h1>
+    <p id="msg">Current Task:</p>
+    <ul>
+        <li class="list">Add visual styles</li>
+        <li class="list">Add light and dark themes</li>
+        <li>Enable switching the theme</li>
+    </ul>
+    
+    <!-- An ID attribute (used in the <p> element) can be used for styling one element,
+    while the class attribute (used in the <li> element) is for styling all elements of the same class. -->
+
+    <!-- The Elements tab in developer tools shows you the document object model (DOM) as rendered
+    in the browser. When debugging, it is often important to see how the browser interprets your
+    source code. Inspecting the page in a browser provides all sorts of useful information and can
+    help you troubleshoot problems.
+    NOTE: We can also view CSS details with the inspector. -->
+
+    <div>
+        <button class="btn">Dark</button>
+    </div>
+    <!-- Note that the <button> element in this example has a class attribute that we will use to apply CSS styles. -->
+    
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <!-- NOTE: The <script> element could be placed in the <head> or elsewhere in the <body>.
+    However, putting <script> element at the end of the <body> section enables all the page content
+    to display on the screen first, and then load the script. -->
+
+    <!-- Adding FAULT to tolerance -->
+    <!-- In HTML file, add a <noscript> element after the closing </script> tag, which can be used
+    to show a message if JavaScript is deactivated. -->
+    <!-- Adding the <noscript> element is an example of fault tolerance or graceful degradation.
+    By using this, our code can detect and plan for when a feature isn't supported or available. -->
+</body>
+</html>

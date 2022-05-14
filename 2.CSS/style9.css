@@ -1,0 +1,64 @@
+body {
+	font-family: garamond;
+	background-color: #008000;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.filler {
+	height: 10px;
+}
+
+header {
+	background-color: #71F73B;
+	padding: 10px;
+	text-align: center;
+	color: darkred;
+}
+
+#main-content {
+	background-color: yellowgreen;
+	max-width: 500px;
+	padding: 10px;
+	height: 300px;
+	width: 50%;
+	margin: auto;
+	animation-name: demo;
+	animation-duration: 3s;
+}
+
+@keyframes demo {
+	from {
+		height: 50px;
+	}
+	to {
+		height: 300px;
+	}
+	from {
+		background-color: white;
+	}
+	to {
+		background-color: yellow;
+	}
+	0% {
+		transform: rotate(45deg);
+	}
+	50% {
+		background-color: olive;
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#footer {
+	background-color: #71F73B;
+	text-align: center;
+	padding: 10px;
+}

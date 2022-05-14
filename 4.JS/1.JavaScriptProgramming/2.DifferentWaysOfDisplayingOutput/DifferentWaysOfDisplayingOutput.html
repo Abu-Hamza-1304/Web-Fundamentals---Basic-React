@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>Different ways to display information</h2>
+
+	<p id="code"></p>
+
+	<script type="text/javascript">
+		document.getElementById("code").innerHTML = "Hello world! This is from the setting of the innerHTML";
+	</script>
+
+	<p>Hello world! I am from within the paragraph tag in the HTML page</p>
+
+	<script type="text/javascript">
+		document.write("Hello world! I am from the first document.write()")
+	</script>
+
+	<br>
+	<br>
+
+	<button onclick="window.alert('Hello world! I am from the window alert')">Click Me to view a window alert</button>
+
+	<br>
+	<br>
+
+	<button onclick="document.write('Hello world! I am from the second document.write()')">Click Me to clear the existing HTML</button>
+
+	<script type="text/javascript">console.log("Hello world! This is the console message")</script>
+
+	<!-- There are many different ways in which data can be conveyed to the user.
+	Either by means of adding to the HTML(.innerHTML)
+	Or by writing over to the console(console.log)
+	Or by means of a window alert(window.alert)-->
+
+	<!-- Out of all of these, it is console.log which is least distruptive to the end-user.
+	The window.alert is used less for debugging and more in order to interact with the user.
+	And editing the innerHTML of an element is used only if we actively wish to manipulate the HTML of our page.
+	document.write however is very rarely used in actual JS programming.-->
+
+	<!--NOTE: Clicking second button, will invoke another document.write
+		But because this web page is already loaded, this invocation of document.write will clear out the entire HTML and replaces it with the contents of the second document.write. Since invoking document.write on a fully loaded web page has the effect of rewriting its entire contents. It is very very rearely used.-->
+</body>
+</html>
